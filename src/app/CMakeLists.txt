@@ -1,0 +1,7 @@
+project(cellular-automaton-app)
+cmake_minimum_required(VERSION 3.21)
+set(CMAKE_CXX_STANDARD 23)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+add_executable(cellular-automaton-app main.cpp)
+target_link_libraries(cellular-automaton-app PRIVATE cellular-automaton-library)
+target_include_directories(cellular-automaton-app PRIVATE ../../include)
